@@ -1,0 +1,8 @@
+name=Windows 2003 Terminal Services Session Monitor
+version=2.0
+platforms=windows linux solaris
+description=Monitor Windows Terminal Services sessions count (how many sessions are active/inactive/etc). Note: May not work on Windows 2008+
+restartCore=false
+requiresAgentScript=true
+onUpgradeRemoveFiles=true
+onUpgradeRemoveMonitors=false

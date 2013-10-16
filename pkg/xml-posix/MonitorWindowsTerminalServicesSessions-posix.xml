@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uptime xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.uptimesoftware.com/erdc/erdc erdc.xsd"
+xmlns:upt="http://www.uptimesoftware.com/erdc/erdc"
+xmlns="http://www.uptimesoftware.com/erdc/erdc" version="4.0" target_grouping="non-agent">
+<class>Windows Terminal Services Sessions</class>
+<exec> com.uptimesoftware.uptime.erdc.MonitorCustomScriptRunner </exec>
+<elements>
+	<element name="process" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+		<control_options> size:40 </control_options>
+		<default_value>scripts/MonitorWindowsTerminalServices/wts.sh</default_value>
+		<short_description>Script Name</short_description>
+		<long_description>Name of the script/binary/process to be executed by up.time </long_description>
+		<validation_rule>
+			<alphanumeric/>
+		</validation_rule>
+		<error_message>
+			<alphanumeric>required field</alphanumeric>
+		</error_message>
+		<gui_type>
+			<string/>
+		</gui_type>
+	</element>
+	<element name="password" parameter_type="input" data_type="string" gui_basic="1" range_type="0">
+		<control_options> size:40 </control_options>
+		<default_value/>
+		<short_description> up.time Agent Password </short_description>
+		<long_description> up.time agent password </long_description>
+		<validation_rule/>
+		<error_message/>
+		<gui_type>
+			<password/>
+		</gui_type>
+	</element>
+	<element name="ActiveSessions" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0">
+		<control_options> size:40 </control_options>
+		<default_value/>
+		<short_description>Active Sessions</short_description>
+		<long_description>Number of active Terminal Services sessions.</long_description>
+		<validation_rule/>
+		<error_message/>
+		<gui_type>
+			<decimal/>
+		</gui_type>
+	</element>
+	<element name="InactiveSessions" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0">
+		<control_options> size:40 </control_options>
+		<default_value/>
+		<short_description>Inactive Sessions</short_description>
+		<long_description>Number of inactive Terminal Services sessions.</long_description>
+		<validation_rule/>
+		<error_message/>
+		<gui_type>
+			<decimal/>
+		</gui_type>
+	</element>
+	<element name="TotalSessions" parameter_type="output" data_type="decimal" gui_basic="1" range_type="0">
+		<control_options> size:40 </control_options>
+		<default_value/>
+		<short_description>Total Sessions</short_description>
+		<long_description>Total number of Terminal Services sessions.</long_description>
+		<validation_rule/>
+		<error_message/>
+		<gui_type>
+			<decimal/>
+		</gui_type>
+	</element>
+</elements>
+<help>This is a windows terminal service check</help>
+</uptime>

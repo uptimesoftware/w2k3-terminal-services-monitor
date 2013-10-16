@@ -1,0 +1,6 @@
+platform: linux solaris
+dependencies: agent perl
+definition-xml: MonitorWTS.xml
+executable: check_wts_agent.pl
+support-file: readme.txt
+readme: readme.txt
