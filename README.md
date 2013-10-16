@@ -7,13 +7,13 @@ See http://uptimesoftware.github.io for more information.
 
 ### Category
 
-{ page.category }}
+plugin
 
 ### Version Compatibility
 
 
   
-    * Windows 2003 Terminal Services Sessions Monitor 1.0 - 5.5, 5.4, 5.3, 5.2
+* Windows 2003 Terminal Services Sessions Monitor 1.0 - 5.5, 5.4, 5.3, 5.2
   
 
 
@@ -67,8 +67,17 @@ None; no agent required
 
 ### Output Variables
 
-* Terminal Services / Active Sessions* Terminal Services / Inactive Sessions* Terminal Services / Total Sessions
+
+* Terminal Services / Active Sessions
+
+* Terminal Services / Inactive Sessions
+
+* Terminal Services / Total Sessions
+
 
 ### Languages Used
-* Shell/Batch* Perl
+
+* Shell/Batch
+
+* Perl
 
